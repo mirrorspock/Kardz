@@ -21,6 +21,10 @@
 		387E9EE21998D9570063E789 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387E9EC41998D9570063E789 /* UIKit.framework */; };
 		387E9EEA1998D9580063E789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 387E9EE81998D9580063E789 /* InfoPlist.strings */; };
 		387E9EEC1998D9580063E789 /* KardzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 387E9EEB1998D9580063E789 /* KardzTests.m */; };
+		387E9EF71998EBC80063E789 /* KardzCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 387E9EF61998EBC80063E789 /* KardzCard.m */; };
+		387E9EFB1998EC360063E789 /* KardzPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 387E9EFA1998EC360063E789 /* KardzPlayingCard.m */; };
+		387E9EFE1998EEDE0063E789 /* KardzDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 387E9EFD1998EEDE0063E789 /* KardzDeck.m */; };
+		387E9F011998EEFA0063E789 /* KardzPlayingCardsDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 387E9F001998EEFA0063E789 /* KardzPlayingCardsDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,22 @@
 		387E9ECF1998D9570063E789 /* KardzAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KardzAppDelegate.h; sourceTree = "<group>"; };
 		387E9ED01998D9570063E789 /* KardzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KardzAppDelegate.m; sourceTree = "<group>"; };
 		387E9ED31998D9570063E789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		387E9ED51998D9570063E789 /* KardzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KardzViewController.h; sourceTree = "<group>"; };
-		387E9ED61998D9570063E789 /* KardzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KardzViewController.m; sourceTree = "<group>"; };
-		387E9ED81998D9570063E789 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		387E9ED51998D9570063E789 /* KardzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KardzViewController.h; path = Kardz/KardzViewController.h; sourceTree = "<group>"; };
+		387E9ED61998D9570063E789 /* KardzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KardzViewController.m; path = Kardz/KardzViewController.m; sourceTree = "<group>"; };
+		387E9ED81998D9570063E789 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Kardz/Images.xcassets; sourceTree = "<group>"; };
 		387E9EDE1998D9570063E789 /* KardzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KardzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		387E9EDF1998D9570063E789 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		387E9EE71998D9580063E789 /* KardzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KardzTests-Info.plist"; sourceTree = "<group>"; };
 		387E9EE91998D9580063E789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		387E9EEB1998D9580063E789 /* KardzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KardzTests.m; sourceTree = "<group>"; };
+		387E9EF51998EBC80063E789 /* KardzCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KardzCard.h; path = Kardz/Model/KardzCard.h; sourceTree = "<group>"; };
+		387E9EF61998EBC80063E789 /* KardzCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KardzCard.m; path = Kardz/Model/KardzCard.m; sourceTree = "<group>"; };
+		387E9EF91998EC360063E789 /* KardzPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KardzPlayingCard.h; path = Kardz/Model/KardzPlayingCard.h; sourceTree = "<group>"; };
+		387E9EFA1998EC360063E789 /* KardzPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KardzPlayingCard.m; path = Kardz/Model/KardzPlayingCard.m; sourceTree = "<group>"; };
+		387E9EFC1998EEDE0063E789 /* KardzDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KardzDeck.h; path = Kardz/Model/KardzDeck.h; sourceTree = "<group>"; };
+		387E9EFD1998EEDE0063E789 /* KardzDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KardzDeck.m; path = Kardz/Model/KardzDeck.m; sourceTree = "<group>"; };
+		387E9EFF1998EEFA0063E789 /* KardzPlayingCardsDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KardzPlayingCardsDeck.h; path = Kardz/Model/KardzPlayingCardsDeck.h; sourceTree = "<group>"; };
+		387E9F001998EEFA0063E789 /* KardzPlayingCardsDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KardzPlayingCardsDeck.m; path = Kardz/Model/KardzPlayingCardsDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +94,12 @@
 		387E9EB41998D9570063E789 = {
 			isa = PBXGroup;
 			children = (
-				387E9EC61998D9570063E789 /* Kardz */,
+				387E9ED21998D9570063E789 /* Main.storyboard */,
+				387E9ED51998D9570063E789 /* KardzViewController.h */,
+				387E9ED61998D9570063E789 /* KardzViewController.m */,
+				387E9ED81998D9570063E789 /* Images.xcassets */,
+				387E9EC71998D9570063E789 /* Supporting Files */,
+				387E9EF81998EBF00063E789 /* Model */,
 				387E9EE51998D9580063E789 /* KardzTests */,
 				387E9EBF1998D9570063E789 /* Frameworks */,
 				387E9EBE1998D9570063E789 /* Products */,
@@ -109,29 +126,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		387E9EC61998D9570063E789 /* Kardz */ = {
+		387E9EC71998D9570063E789 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				387E9ECF1998D9570063E789 /* KardzAppDelegate.h */,
 				387E9ED01998D9570063E789 /* KardzAppDelegate.m */,
-				387E9ED21998D9570063E789 /* Main.storyboard */,
-				387E9ED51998D9570063E789 /* KardzViewController.h */,
-				387E9ED61998D9570063E789 /* KardzViewController.m */,
-				387E9ED81998D9570063E789 /* Images.xcassets */,
-				387E9EC71998D9570063E789 /* Supporting Files */,
-			);
-			path = Kardz;
-			sourceTree = "<group>";
-		};
-		387E9EC71998D9570063E789 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				387E9EC81998D9570063E789 /* Kardz-Info.plist */,
 				387E9EC91998D9570063E789 /* InfoPlist.strings */,
 				387E9ECC1998D9570063E789 /* main.m */,
 				387E9ECE1998D9570063E789 /* Kardz-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Kardz;
 			sourceTree = "<group>";
 		};
 		387E9EE51998D9580063E789 /* KardzTests */ = {
@@ -150,6 +156,21 @@
 				387E9EE81998D9580063E789 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		387E9EF81998EBF00063E789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				387E9EF51998EBC80063E789 /* KardzCard.h */,
+				387E9EF61998EBC80063E789 /* KardzCard.m */,
+				387E9EF91998EC360063E789 /* KardzPlayingCard.h */,
+				387E9EFA1998EC360063E789 /* KardzPlayingCard.m */,
+				387E9EFC1998EEDE0063E789 /* KardzDeck.h */,
+				387E9EFD1998EEDE0063E789 /* KardzDeck.m */,
+				387E9EFF1998EEFA0063E789 /* KardzPlayingCardsDeck.h */,
+				387E9F001998EEFA0063E789 /* KardzPlayingCardsDeck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387E9EF71998EBC80063E789 /* KardzCard.m in Sources */,
 				387E9ECD1998D9570063E789 /* main.m in Sources */,
 				387E9ED11998D9570063E789 /* KardzAppDelegate.m in Sources */,
+				387E9EFE1998EEDE0063E789 /* KardzDeck.m in Sources */,
+				387E9EFB1998EC360063E789 /* KardzPlayingCard.m in Sources */,
+				387E9F011998EEFA0063E789 /* KardzPlayingCardsDeck.m in Sources */,
 				387E9ED71998D9570063E789 /* KardzViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +314,7 @@
 				387E9ED31998D9570063E789 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Kardz;
 			sourceTree = "<group>";
 		};
 		387E9EE81998D9580063E789 /* InfoPlist.strings */ = {
