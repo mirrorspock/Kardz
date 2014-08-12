@@ -20,7 +20,6 @@
                 card.rank = rank;
                 card.suit = suit;
                 [self addCard:card];
-                NSLog(@"added = %d %@",card.rank,card.suit);
             }
         }
     }

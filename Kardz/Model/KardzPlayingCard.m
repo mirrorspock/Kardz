@@ -10,6 +10,23 @@
 
 @implementation KardzPlayingCard
 
+-(int)match:(NSArray *)otherCards
+{
+        int score = 0;
+        if ([otherCards count] == 1)
+        {
+            KardzPlayingCard *otherCard = [otherCards firstObject];
+            if ([self.suit isEqualToString:otherCard.suit])
+            {
+            score = 1;
+        } else if (self.rank == otherCard.rank){
+            score = 4;
+        }
+    }
+    
+    return score;
+}
+
 -(NSString *)contents
 {
     NSArray *rankStrings = [KardzPlayingCard rankStrings];
@@ -46,7 +63,7 @@
 
 -(NSString *)suit
 {
-    return _suit ? _suit : @"?";
+return _suit ? _suit : @"?";
     
 }
 

@@ -26,11 +26,11 @@
 {
     if (atTop) {
         [self.cards insertObject:card atIndex:0];
-         } else {
-             [self.cards addObject:card];
-         }
-
-
+    } else {
+        [self.cards addObject:card];
+    }
+    
+    
 }
 
 
@@ -40,10 +40,11 @@
 
 -(KardzCard *)drawRandomCard {
     KardzCard *randomCard = nil;
-    
-    unsigned index = arc4random() % [self.cards count];
-    randomCard = self.cards[index];
-    [self.cards removeObjectAtIndex:index];
+    if (self.cards.count){
+        unsigned index = arc4random() % [self.cards count];
+        randomCard = self.cards[index];
+        [self.cards removeObjectAtIndex:index];
+    }
     return randomCard;
 }
 
